@@ -1,0 +1,9 @@
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+for features in numeric_features:
+    plt.figure(figsize=(10, 6))
+    sns.boxplot(x=train[features])
+    plt.title(f'Box Plot of {features}')
+    plt.show()
